@@ -1,12 +1,14 @@
 # Jigsaw-Net
 
-A python script for video composting .
+Solving jig-saw puzzles with deep CNN's .
 
-It takes two videos as input and produces a single video composite as output. The person in the first video is segmented out and blended seamlessly into the second video (background) .It uses deeplab v3 for segmentation and a custom network (caffe) for color harmonization.Since the tensorflow model was trained on PASCAL VOC dataset, we can segment out any object belonging to those classes and combine them with the other video to produce a video composite.
+A jigsaw puzzle is a tiling puzzle that requires the assembly of often oddly shaped interlocking and tessellating pieces. Each piece usually has a small part of a picture on it; when complete, a jigsaw puzzle produces a complete picture.
 
-Sample input and output videos along with link to pretrained modles are provided in respective folders.
+Problem statement: Given an source image of size NxN and shuffled image with block size of BxB, our aim is to unscramble the shuffled jigsaw image to produce the original image.Here we limit ourselves to square shaped images where the tessellating pieces have equal height and width.The blocks should be square shaped and can have four possible orientations i.e roations in degrees - {90,180,270,360}.
 
-N.B: Currently, only the inference code is provided; please refer the links in the acknowledgement section for training and other implementation details.
+You may also run the entire training, testing and data preparartion and  in Google Colaboratory with the IPython notebook.
+
+N.B: Install the correct version of keras to train the network. Also ensure sufficient ram is available, since we will be loading our full data-set into memory(currently) at the start of training.
 
 ## Dependencies
 
@@ -18,20 +20,27 @@ N.B: Currently, only the inference code is provided; please refer the links in t
 
 ## Prerequisites
 
-* Keras installation (TF backend)  : pip install keras==2.2.2
+* Keras installation (TF backend)
 * GPU with CUDA support
-
+```
+pip install keras==2.2.2
+```
 ## Demo
+
+### Network
+
+![Screenshot](scramble_model.png)
+
 
 ### Inputs
 
 Input1:-
 
-![Screenshot](https://drive.google.com/uc?id=1Rb6oXW3KufVApvID9MwxsknpQON2CkQ_)
+![Screenshot](https://drive.google.com/uc?id=1hxKsUA9_oAk41o6YGFuOL9mAgQ5SqxjC)
 
 
 ### Output
-![Screenshot](https://drive.google.com/uc?id=1hxKsUA9_oAk41o6YGFuOL9mAgQ5SqxjC)
+![Screenshot](https://drive.google.com/uc?id=1Rb6oXW3KufVApvID9MwxsknpQON2CkQ_)
 
 ## Versioning
 
@@ -42,6 +51,5 @@ Version 1.0
 Anil Sathyan
 
 ## Acknowledgments
-* "https://averdones.github.io/real-time-semantic-image-segmentation-with-deeplab-in-tensorflow/
-* "https://github.com/tensorflow/models/tree/master/research/deeplab"
-* "https://github.com/wasidennis/DeepHarmonization"
+* "https://keras.io/"
+* "https://www.tensorflow.org/"
