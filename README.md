@@ -6,7 +6,7 @@ A **jigsaw puzzle** is a tiling puzzle that requires the assembly of often oddly
 
 **Problem statement**: Given an source image of size **NxN** and shuffled image with block size of **BxB**, our aim is to unscramble the shuffled jigsaw image to produce the original image.Here we limit ourselves to **square shaped images** where the tessellating pieces have *equal height and width*.The blocks should be square shaped and can have *four* possible orientations i.e rotations in degrees - **{90,180,270,360}**.
 
-A **direct permutation** based approach to solve the puzzle will require an algorithm with **exponential time complexity**.Here we use a **simple encoder-decoder based CNN with two heads for block suffling and block rotations** respectively, for solving the jigsaw puzzle in real-time.
+A **direct permutation** based approach to solve the puzzle will require an algorithm with **exponential time complexity**.Here we use a **simple encoder-decoder based CNN with two heads for block shuffling and block rotations** respectively, for solving the jigsaw puzzle in real-time.
 
 You may run the entire training, testing and data preparartion in Google Colaboratory with the IPython notebook.
 
