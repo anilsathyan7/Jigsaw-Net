@@ -38,17 +38,19 @@ python infer.py # Perform inference
 ```
 
 ### Training Graphs
+![Screenshot](loss.png)
 
+![Screenshot](val_loss.png)
 
 ### Network
 
 ![Screenshot](scramble_model.png)
 
-### Inputs
+### Sample Input
 
 ![Screenshot](https://drive.google.com/uc?id=1hxKsUA9_oAk41o6YGFuOL9mAgQ5SqxjC)
 
-### Output
+### Sample Output
 ![Screenshot](https://drive.google.com/uc?id=1Rb6oXW3KufVApvID9MwxsknpQON2CkQ_)
 
 ## Versioning
