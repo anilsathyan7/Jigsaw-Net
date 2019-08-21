@@ -9,8 +9,8 @@ Problem statement: Given an source image of size NxN and shuffled image with blo
 A direct permutation based approach to solve the puzzle will require an algorithm with exponential time complexity.Here we use a simple encoder decoder based CNN with two heads for block suffling and block rotations respectively, for solving the jigsaw puzzle in real-time.
 
 You may run the entire training, testing and data preparartion in Google Colaboratory with the IPython notebook.
-**
-N.B: Install the correct version of keras to train the network. Also ensure sufficient ram is available, since we will be loading our full data-set into memory(currently) at the start of training.**
+
+**N.B: Install the correct version of keras to train the network. Also ensure sufficient ram is available, since we will be loading our full data-set into memory(currently) at the start of training.**
 
 ## Dependencies
 
